@@ -1,56 +1,83 @@
 .main-layout {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .todo-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: grey;
-    width: 300px;
-    height: 100px;
-    border-radius: 12px;
-    box-shadow: 1px 1px 8px rgba(0,0,0, 0.25);
-    text-align: center;
-    margin-bottom: 20px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: grey;
+  width: 300px;
+  height: 100px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .todo-text {
-    display: block;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: whitesmoke;
-    margin: 1rem 0;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: 1rem 0;
+  /* text-decoration: line-through; */
 }
 
 .confirm-button-box {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 
-.confirm{
-    padding: 0.5rem 1.5rem;
-    cursor: pointer;
-    background-color: #800040;
-    border-radius: 4px;
-    color: white;
-    border: 1px solid #800040;
-    margin: 0 1rem;
+.confirm {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  background-color: #800040;
+  border-radius: 4px;
+  color: white;
+  border: 1px solid #800040;
+  margin: 0 1rem;
 }
+
+.confirmed {
+    text-decoration: line-through;
+  }
 
 .confirm:hover {
-    background-color: #9c1458;
-    border-color: #9c1458;
+  background-color: #9c1458;
+  border-color: #9c1458;
 }
 
-.confirm--alt {
-    background-color: transparent;
-    color: #800040;
-  }
-  
-  .confirm--alt:hover {
-    background-color: #f8dae9;
+.confirm-modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+.confirm.alt {
+  background-color: #800040;
+}
+
+.confirm.alt:hover {
+  background-color: #f8dae9;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
   }

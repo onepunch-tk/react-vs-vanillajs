@@ -1,0 +1,56 @@
+.main-layout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: grey;
+    width: 300px;
+    height: 100px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 8px rgba(0,0,0, 0.25);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo-text {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 1rem 0;
+}
+
+.confirm-button-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.confirm{
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    background-color: #800040;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #800040;
+    margin: 0 1rem;
+}
+
+.confirm:hover {
+    background-color: #9c1458;
+    border-color: #9c1458;
+}
+
+.confirm--alt {
+    background-color: transparent;
+    color: #800040;
+  }
+  
+  .confirm--alt:hover {
+    background-color: #f8dae9;
+  }

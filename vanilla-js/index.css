@@ -26,13 +26,13 @@
   /* text-decoration: line-through; */
 }
 
-.confirm-button-box {
+.todo-button-box {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1rem;
 }
 
-.confirm {
+.todo-button {
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   background-color: #800040;
@@ -42,13 +42,13 @@
   margin: 0 1rem;
 }
 
-.confirmed {
-    text-decoration: line-through;
-  }
-
-.confirm:hover {
+.todo-button:hover {
   background-color: #9c1458;
   border-color: #9c1458;
+}
+
+.confirmed {
+  text-decoration: line-through;
 }
 
 .confirm-modal {
@@ -64,20 +64,20 @@
   left: calc(50% - 15rem);
 }
 
-.confirm.alt {
+.todo-button.alt {
   background-color: #800040;
 }
 
-.confirm.alt:hover {
+.todo-button.alt:hover {
   background-color: #f8dae9;
 }
 
 .backdrop {
-    position: fixed;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.75);
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}

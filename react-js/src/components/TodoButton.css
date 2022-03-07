@@ -1,0 +1,29 @@
+.todo-button-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+  
+  .todo-button {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    background-color: #800040;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #800040;
+    margin: 0 1rem;
+  }
+  
+  .todo-button:hover {
+    background-color: #9c1458;
+    border-color: #9c1458;
+  }
+
+  .todo-button.alt {
+    background-color: #800040;
+  }
+  
+  .todo-button.alt:hover {
+    background-color: #f8dae9;
+  }
+  
